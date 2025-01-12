@@ -1896,19 +1896,19 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .btn-download {
     display: inline-block;
-    padding: 10px 20px; /* Ukuran tombol */
-    font-size: 1rem;
+    padding: 8px 16px; /* Ukuran tombol lebih kecil */
+    font-size: 0.9rem; /* Ukuran font lebih kecil */
     font-weight: bold;
     color: #ffffff;
     background: linear-gradient(90deg, #007bff, #0056b3); /* Gradien warna */
     text-decoration: none;
-    border-radius: 15px; /* Membulatkan tombol */
+    border-radius: 10px; /* Membulatkan tombol */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
     transition: all 0.3s ease; /* Animasi transisi */
     position: relative; /* Untuk efek setelah */
     overflow: hidden; /* Untuk menyembunyikan animasi setelah */
   }
-  
+
   .btn-download::after {
     content: '';
     position: absolute;
@@ -1920,39 +1920,39 @@ textarea.form-input::-webkit-resizer { display: none; }
     transform: skewX(-30deg); /* Membuat efek miring */
     transition: left 0.5s ease; /* Animasi saat hover */
   }
-  
+
   .btn-download:hover {
     background: linear-gradient(90deg, #0056b3, #003f7f); /* Warna gradien berubah */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Bayangan lebih tegas */
   }
-  
+
   .btn-download:hover::after {
     left: 100%; /* Animasi bergerak ke kanan */
   }
-  
+
   .btn-download:active {
     transform: scale(0.95); /* Efek klik */
   }
 
   @media screen and (max-width: 768px) {
     .btn-download {
-      padding: 10px 20px; /* Kurangi ukuran padding */
-      font-size: 0.9rem; /* Ukuran font lebih kecil */
-      border-radius: 20px; /* Sesuaikan radius */
+      padding: 6px 12px; /* Kurangi ukuran padding */
+      font-size: 0.8rem; /* Ukuran font lebih kecil */
+      border-radius: 8px; /* Sesuaikan radius */
     }
-  
+
     .btn-download::after {
       left: -150%; /* Efek highlight lebih pendek */
       width: 200%; /* Kurangi lebar highlight */
     }
   }
-  
+
   /* Tambahkan untuk perangkat ultra kecil */
   @media screen and (max-width: 480px) {
     .btn-download {
-      padding: 8px 16px;
-      font-size: 0.8rem;
-      border-radius: 15px;
+      padding: 4px 8px;
+      font-size: 0.7rem;
+      border-radius: 6px;
     }
   }
 }
