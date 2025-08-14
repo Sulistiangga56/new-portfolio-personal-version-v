@@ -158,7 +158,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-document.getElementById('sendEmail').addEventListener('click', function(event) {
+document.getElementById('sendEmail').addEventListener('click', function (event) {
   event.preventDefault(); // Prevent the default action
 
   const name = document.getElementById('name').value;
@@ -171,4 +171,36 @@ document.getElementById('sendEmail').addEventListener('click', function(event) {
   const mailtoLink = `mailto:anggasulistiangga@gmail.com?subject=${subject}&body=${body}`;
 
   window.location.href = mailtoLink;
+});
+
+// DropdownCV
+document.addEventListener('DOMContentLoaded', function () {
+  const cvBtn = document.getElementById('cvDropdownBtn');
+  const cvModal = document.getElementById('cvModal');
+  const cvModalClose = document.getElementById('cvModalClose');
+  const cvForm = document.getElementById('cvForm');
+
+  // Show modal for both desktop and mobile
+  cvBtn.addEventListener('click', function (e) {
+    cvModal.style.display = 'flex';
+    e.stopPropagation();
+  });
+
+  // Hide modal when clicking outside the modal content
+  window.addEventListener('click', function (e) {
+    if (cvModal.style.display === 'flex' && !cvModal.contains(e.target) && e.target !== cvBtn) {
+      cvModal.style.display = 'none';
+    }
+  });
+
+  cvModalClose.onclick = function () {
+    cvModal.style.display = 'none';
+  };
+
+  cvForm.onsubmit = function (e) {
+    e.preventDefault();
+    const lang = document.querySelector('input[name="cvLang"]:checked').value;
+    window.open(lang === 'id' ? './assets/document/Angga Sulistiangga_ID.pdf' : './assets/document/Angga Sulistiangga_EN.pdf', '_blank');
+    cvModal.style.display = 'none';
+  };
 });

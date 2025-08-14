@@ -169,6 +169,10 @@
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certification</button>
+          </li>
+
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
           </li>
 
@@ -176,11 +180,38 @@
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
-          <li>
-            <a href="./assets/document/CV_ANGGA SULISTIANGGA.pdf" class="btn-download" download>Download CV</a>
+          <div class="dropdown-cv">
+            <button class="navbar-link" id="cvDropdownBtn">Download CV</button>
+            <div class="dropdown-content" id="cvDropdownContent" style="display: none;">
+              <button class="cv-download-btn" data-lang="id">Indonesia</button>
+              <button class="cv-download-btn" data-lang="en">English</button>
+            </div>
+          </div>
           </li>
         </ul>
       </nav>
+
+      <!-- CV Modal (Mobile & Desktop) -->
+      <div id="cvModal" class="cv-modal" style="display:none;">
+        <div class="cv-modal-content">
+          <span class="cv-modal-close" id="cvModalClose">&times;</span>
+          <h3 style="margin-bottom:10px;">Download CV</h3>
+          <form id="cvForm">
+            <div class="cv-radio-group">
+              <label>
+                <input type="radio" name="cvLang" value="id" checked>
+                Indonesia
+              </label>
+              <label>
+                <input type="radio" name="cvLang" value="en">
+                English
+              </label>
+            </div>
+            <button type="submit" class="cv-modal-btn">Download</button>
+          </form>
+
+        </div>
+      </div>
 
       <!--
         - #ABOUT
@@ -752,21 +783,23 @@
               <br>
               <p class="timeline-text">
                 <b>Key Contributions:</b>
-                <ul class="timeline-text">
-                  <li>● Customized System Development: Designing and developing systems tailored to clients' specific
-                    needs, ranging from business applications to internal management systems, ensuring scalable and efficient
-                    solutions to support business growth.</li>
-                  <li>● Effective Task Management: Implementing and managing task management platforms that help client
-                    teams work more efficiently, featuring scheduling, progress tracking, and improved collaboration.</li>
-                  <li>● Functional and Responsive Website Creation: Designing modern, responsive, and SEO-friendly
-                    websites, enhancing clients' online presence with intuitive user interfaces and optimal user experiences.</li>
-                  <li>● Ongoing Maintenance and Support: Providing technical support and continuous system maintenance
-                    to ensure that applications and websites remain up-to-date, secure, and fully functional.</li>
-                  <li>● Client Needs Analysis: Collaborating with clients to understand their business needs, delivering
-                    targeted and reliable technology-based solutions.</li>
-                  <li>● Project Management: Independently managing projects from planning through final implementation,
-                    with a focus on meeting deadlines and ensuring client satisfaction.</li>
-                </ul>
+              <ul class="timeline-text">
+                <li>● Customized System Development: Designing and developing systems tailored to clients' specific
+                  needs, ranging from business applications to internal management systems, ensuring scalable and
+                  efficient
+                  solutions to support business growth.</li>
+                <li>● Effective Task Management: Implementing and managing task management platforms that help client
+                  teams work more efficiently, featuring scheduling, progress tracking, and improved collaboration.</li>
+                <li>● Functional and Responsive Website Creation: Designing modern, responsive, and SEO-friendly
+                  websites, enhancing clients' online presence with intuitive user interfaces and optimal user
+                  experiences.</li>
+                <li>● Ongoing Maintenance and Support: Providing technical support and continuous system maintenance
+                  to ensure that applications and websites remain up-to-date, secure, and fully functional.</li>
+                <li>● Client Needs Analysis: Collaborating with clients to understand their business needs, delivering
+                  targeted and reliable technology-based solutions.</li>
+                <li>● Project Management: Independently managing projects from planning through final implementation,
+                  with a focus on meeting deadlines and ensuring client satisfaction.</li>
+              </ul>
               </p>
             </li>
 
@@ -790,15 +823,15 @@
               <br>
               <p class="timeline-text">
                 <b>Key Contributions:</b>
-                <ul class="timeline-text">
-                  <li>● Developed and optimized the ADMS Unit application to support efficient and integrated
-                    operational processes.</li>
-                  <li>● Studied, updated, and aligned the overall ADMS business processes with organizational needs.</li>
-                  <li>● Gained a comprehensive understanding of workflows and activities within the Arista Group system
-                    to ensure alignment between business operations and system functionalities.</li>
-                  <li>● Performed system maintenance and resolved issues based on user-reported tickets, ensuring timely
-                    and effective problem-solving.</li>
-                </ul>
+              <ul class="timeline-text">
+                <li>● Developed and optimized the ADMS Unit application to support efficient and integrated
+                  operational processes.</li>
+                <li>● Studied, updated, and aligned the overall ADMS business processes with organizational needs.</li>
+                <li>● Gained a comprehensive understanding of workflows and activities within the Arista Group system
+                  to ensure alignment between business operations and system functionalities.</li>
+                <li>● Performed system maintenance and resolved issues based on user-reported tickets, ensuring timely
+                  and effective problem-solving.</li>
+              </ul>
               </p>
             </li>
 
@@ -825,21 +858,22 @@
               <br>
               <p class="timeline-text">
                 <b>Key Contributions:</b>
-                <ul class="timeline-text">
-                  <li>● Development of Event Report Data Recap System: Designed and implemented a digital system to
-                    streamline event report data recaps for the QHSE Department, featuring real-time automated report generation to
-                    enhance monitoring speed and accuracy.</li>
-                  <li>● Digitization of the CPP System: Developed a digital system for the CPP process, enabling real-time
-                    report creation and management to improve operational efficiency and data accuracy in core
-                    processes.
-                  </li>
-                  <li>● Creation of an Integrated Dashboard: Designed an integrated dashboard for the QHSE Department with
-                    comprehensive data visualization, supporting in-depth data analysis and facilitating informed,
-                    data-driven decision-making.</li>
-                  <li>● Design and Development of a Web-Based Internal Quality Audit System: Developed a digital system
-                    for internal quality audits in the QHSE Department, improving oversight quality and ensuring adherence
-                    to corporate standards.</li>
-                </ul>
+              <ul class="timeline-text">
+                <li>● Development of Event Report Data Recap System: Designed and implemented a digital system to
+                  streamline event report data recaps for the QHSE Department, featuring real-time automated report
+                  generation to
+                  enhance monitoring speed and accuracy.</li>
+                <li>● Digitization of the CPP System: Developed a digital system for the CPP process, enabling real-time
+                  report creation and management to improve operational efficiency and data accuracy in core
+                  processes.
+                </li>
+                <li>● Creation of an Integrated Dashboard: Designed an integrated dashboard for the QHSE Department with
+                  comprehensive data visualization, supporting in-depth data analysis and facilitating informed,
+                  data-driven decision-making.</li>
+                <li>● Design and Development of a Web-Based Internal Quality Audit System: Developed a digital system
+                  for internal quality audits in the QHSE Department, improving oversight quality and ensuring adherence
+                  to corporate standards.</li>
+              </ul>
               </p>
             </li>
 
@@ -867,24 +901,27 @@
               <br>
               <p class="timeline-text">
                 <b>Key Contributions:</b>
-                <ul class="timeline-text">
-                  <li>● Data Analysis and Database Creation: Performing in-depth analysis of existing data to design and
-                    build optimal and scalable databases, ensuring efficiency in data storage and processing for SCM and CSMS
-                    divisions.</li>
-                  <li>● User Needs Analysis: Collaborating with various stakeholders to identify and analyze user needs,
-                    ensuring that the developed application solutions address operational challenges and requirements
-                    effectively.</li>
-                  <li>● Application Development for SCM and CSMS Divisions: Designing and developing web and backend
-                    applications that assist the SCM (Supply Chain Management) and CSMS (Contractor Safety Management
-                    System) divisions in managing data, monitoring workflows, and enhancing operational effectiveness.</li>
-                  <li>● Stakeholder Reporting: Compiling comprehensive final reports for stakeholders, providing insights
-                    into system performance and relevant data analysis results.</li>
-                  <li>● Cross-Team Collaboration: Working within cross-functional teams to ensure iterative and timely
-                    system ndevelopment, maintaining high quality that meets company standards and user needs.</li>
-                  <li>● Application Performance Optimization: Optimizing code, conducting application testing, and
-                    performing debugging to ensure the system functions effectively and is accessible quickly by users across
-                    relevant divisions.</li>
-                </ul>
+              <ul class="timeline-text">
+                <li>● Data Analysis and Database Creation: Performing in-depth analysis of existing data to design and
+                  build optimal and scalable databases, ensuring efficiency in data storage and processing for SCM and
+                  CSMS
+                  divisions.</li>
+                <li>● User Needs Analysis: Collaborating with various stakeholders to identify and analyze user needs,
+                  ensuring that the developed application solutions address operational challenges and requirements
+                  effectively.</li>
+                <li>● Application Development for SCM and CSMS Divisions: Designing and developing web and backend
+                  applications that assist the SCM (Supply Chain Management) and CSMS (Contractor Safety Management
+                  System) divisions in managing data, monitoring workflows, and enhancing operational effectiveness.
+                </li>
+                <li>● Stakeholder Reporting: Compiling comprehensive final reports for stakeholders, providing insights
+                  into system performance and relevant data analysis results.</li>
+                <li>● Cross-Team Collaboration: Working within cross-functional teams to ensure iterative and timely
+                  system ndevelopment, maintaining high quality that meets company standards and user needs.</li>
+                <li>● Application Performance Optimization: Optimizing code, conducting application testing, and
+                  performing debugging to ensure the system functions effectively and is accessible quickly by users
+                  across
+                  relevant divisions.</li>
+              </ul>
               </p>
             </li>
 
@@ -907,21 +944,23 @@
               <br>
               <p class="timeline-text">
                 <b>Key Contributions:</b>
-                <ul class="timeline-text">
-                  <li>● Digital E-Voucher System Development: Designing and implementing an efficient e-voucher
-                    distribution system for both online and offline platforms, leveraging the latest technology to optimize the sales
-                    process.</li>
-                  <li>● Automation and Data Management: Implementing automation in transaction and voucher sales data
-                    management, enhancing operational efficiency and reducing distribution costs.</li>
-                  <li>● Data-Driven Market Analysis: Utilizing data analytics to identify market opportunities and develop
-                    competitive pricing strategies, enabling the offer of vouchers at lower prices without compromising
-                    profit margins.</li>
-                  <li>● System Security and Data Integrity: Ensuring that the system is built with robust security
-                    measures and data integrity is maintained, guaranteeing smooth and secure transactions.</li>
-                  <li>● Sales Optimization Through Technology: Using technology to reach a broader audience and boost
-                    sales through both digital platforms and traditional methods, integrating e-commerce solutions to support
-                    business growth.</li>
-                </ul>
+              <ul class="timeline-text">
+                <li>● Digital E-Voucher System Development: Designing and implementing an efficient e-voucher
+                  distribution system for both online and offline platforms, leveraging the latest technology to
+                  optimize the sales
+                  process.</li>
+                <li>● Automation and Data Management: Implementing automation in transaction and voucher sales data
+                  management, enhancing operational efficiency and reducing distribution costs.</li>
+                <li>● Data-Driven Market Analysis: Utilizing data analytics to identify market opportunities and develop
+                  competitive pricing strategies, enabling the offer of vouchers at lower prices without compromising
+                  profit margins.</li>
+                <li>● System Security and Data Integrity: Ensuring that the system is built with robust security
+                  measures and data integrity is maintained, guaranteeing smooth and secure transactions.</li>
+                <li>● Sales Optimization Through Technology: Using technology to reach a broader audience and boost
+                  sales through both digital platforms and traditional methods, integrating e-commerce solutions to
+                  support
+                  business growth.</li>
+              </ul>
               </p>
             </li>
 
@@ -945,20 +984,20 @@
               <br>
               <p class="timeline-text">
                 <b>Key Contributions:</b>
-                <ul class="timeline-text">
-                  <li>● Bug Hunting in Games: Researching and identifying bugs or glitches in games to ensure a
-                    problem-free
-                    gaming experience.</li>
-                  <li>● Game Testing: Conducting thorough testing of various game aspects, including gameplay mechanics,
-                    graphical performance, and control responsiveness.</li>
-                  <li>● Gameplay Review: Ensuring the game flow adheres to the design, with a focus on balance, enjoyment,
-                    and
-                    optimal player interaction.</li>
-                  <li>● Reporting System Errors: Documenting and reporting system errors or bugs found, providing detailed
-                    descriptions to assist the development team in resolving issues.</li>
-                  <li>● Re-testing Games: Repeating tests after bug fixes to ensure solutions have been successfully
-                    implemented without introducing new problems.</li>
-                </ul>
+              <ul class="timeline-text">
+                <li>● Bug Hunting in Games: Researching and identifying bugs or glitches in games to ensure a
+                  problem-free
+                  gaming experience.</li>
+                <li>● Game Testing: Conducting thorough testing of various game aspects, including gameplay mechanics,
+                  graphical performance, and control responsiveness.</li>
+                <li>● Gameplay Review: Ensuring the game flow adheres to the design, with a focus on balance, enjoyment,
+                  and
+                  optimal player interaction.</li>
+                <li>● Reporting System Errors: Documenting and reporting system errors or bugs found, providing detailed
+                  descriptions to assist the development team in resolving issues.</li>
+                <li>● Re-testing Games: Repeating tests after bug fixes to ensure solutions have been successfully
+                  implemented without introducing new problems.</li>
+              </ul>
               </p>
             </li>
 
@@ -982,18 +1021,18 @@
               <br>
               <p class="timeline-text">
                 <b>Key Contributions:</b>
-                <ul class="timeline-text">
-                  <li>● Network Troubleshooting: Identifying and resolving network disruptions, ensuring that internet
-                    and intranet connections are operating optimally.</li>
-                  <li>● Application Troubleshooting: Addressing issues with applications used by staff, teachers, and
-                    students, including software installation and maintenance.</li>
-                  <li>● Computer Maintenance and Repair: Providing troubleshooting, repair, and upgrade services for
-                    school  computers and student laptops, ensuring all devices function properly.</li>
-                  <li>● Data Backup and Restoration: Ensuring that important data on servers and computers is protected
-                    through regular backups and recovery procedures in case of failure.</li>
-                  <li>● Revenue Sharing System: Repairing student and school laptops and computers with a revenue-sharing
-                    model, focusing on high-quality service.</li>
-                </ul>
+              <ul class="timeline-text">
+                <li>● Network Troubleshooting: Identifying and resolving network disruptions, ensuring that internet
+                  and intranet connections are operating optimally.</li>
+                <li>● Application Troubleshooting: Addressing issues with applications used by staff, teachers, and
+                  students, including software installation and maintenance.</li>
+                <li>● Computer Maintenance and Repair: Providing troubleshooting, repair, and upgrade services for
+                  school computers and student laptops, ensuring all devices function properly.</li>
+                <li>● Data Backup and Restoration: Ensuring that important data on servers and computers is protected
+                  through regular backups and recovery procedures in case of failure.</li>
+                <li>● Revenue Sharing System: Repairing student and school laptops and computers with a revenue-sharing
+                  model, focusing on high-quality service.</li>
+              </ul>
               </p>
             </li>
 
@@ -1016,16 +1055,17 @@
               <br>
               <p class="timeline-text">
                 <b>Key Contributions:</b>
-                <ul class="timeline-text">
-                  <li>● Ensuring Smooth Operations with Comprehensive IT Solutions.</li>
-                  <li>● Performed regular server maintenance and software updates, achieving a 15% improvement in system
-                    stability.</li>
-                  <li>● Troubleshoot network issues and resolve software and hardware malfunctions, minimizing downtime by 20%.</li>
-                  <li>● Managed and scheduled server backups, ensuring 100% data integrity and enabling reliable disaster
-                    recovery processes.</li>
-                  <li>● Assembled and configured computers for optimal performance, enhancing user experience and
-                    operational efficiency.</li>
-                </ul>
+              <ul class="timeline-text">
+                <li>● Ensuring Smooth Operations with Comprehensive IT Solutions.</li>
+                <li>● Performed regular server maintenance and software updates, achieving a 15% improvement in system
+                  stability.</li>
+                <li>● Troubleshoot network issues and resolve software and hardware malfunctions, minimizing downtime by
+                  20%.</li>
+                <li>● Managed and scheduled server backups, ensuring 100% data integrity and enabling reliable disaster
+                  recovery processes.</li>
+                <li>● Assembled and configured computers for optimal performance, enhancing user experience and
+                  operational efficiency.</li>
+              </ul>
               </p>
             </li>
           </ol>
@@ -1868,6 +1908,288 @@
           </ul>
         </section>
       </article>
+
+      <!-- 
+        - #CERTIFICATIONS
+      -->
+      <article class="certification" data-page="certification">
+        <header>
+          <h2 class="h2 article-title">Professional Certification</h2>
+        </header>
+
+        <!-- Education Non-Formal -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Data Certification
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"></h4>
+              <a href="https://drive.google.com/file/d/1ZnctfZFjj2VG5pSOMIlXafhbSGLffCMZ/view" target="_blank" style="color:#007bff;">
+                Certificate of Blockchain Professional - Business Leads from Synergy Academy
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"></h4>
+              <a href="https://drive.google.com/file/d/14j4thsV-GBmF9ezHWOjTK3aW_H-Mlo2Z/view" target="_blank" style="color:#007bff;">
+                Certificate of Command Line Course from Progate
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1D6ZKrllBbjX5eU5cbDGufJ0PAqxiLqr2/view" target="_blank" style="color:#007bff;">
+                Certificate of Go Course from Progate
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"></h4>
+              <a href="https://drive.google.com/file/d/1n-M_3jfoJTLk4ItRYmtkE4rFOhzPi-Tv/view" target="_blank" style="color:#007bff;">
+                Certificate of JavaScript Course from Progate
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/16ziWwNrSCJwISjddH7oFXeT266n70yf_/view" target="_blank" style="color:#007bff;">
+                Certificate of PHP Course from Progate
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1J8zZPPrnd2WJAvcmHa5mJzoLRD9R7bKO/view" target="_blank" style="color:#007bff;">
+                Certificate of React Course from Progate
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1fuoYlvdNH16Tn6tYayhkOjQx_oseB6_K/view" target="_blank" style="color:#007bff;">
+                Certificate of Sass Course from Progate
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1yRKaVyBOyjDHyR41DLPH42IV4HY_LP36/view" target="_blank" style="color:#007bff;">
+                Certificate of React JS for Web Development from Fresh Graduate Academy Digitalent
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1zlYZsqsQCZFVzykm_0ED2zmOLUdVgJvK/view" target="_blank" style="color:#007bff;">
+                Certificate of Competence in the area of Information Technology Networking from Indonesian Professional Certification Authority
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"></h4>
+              <a href="https://drive.google.com/file/d/1aQ5XzeSTFeqSL5FTDZKcX3N4rk_1NWKF/view" target="_blank" style="color:#007bff;">
+                Certificate of Competence in P2KPTK2
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"></h4>
+              <a href="https://drive.google.com/file/d/15LUijm8LqxYivYKpWiw4-HZO0vCs3c8x/view" target="_blank" style="color:#007bff;">
+                Certificate of Database Programming with SQL from Oracle Academy
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1v7PoNh5l1eqlGYOR-Pu7WnHAPUhA3xu8/view" target="_blank" style="color:#007bff;">
+                Certificate of Database Foundations from Oracle Academy
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1mGR7feVtShLu9ZfPMfFvdFzjoBwBlWKW/view" target="_blank" style="color:#007bff;">
+                Certificate of Recognition in Network Security category from KMIPN III
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/12e2O6V28_Y20BevnfLkrz-l8Y9hNiOvi/view" target="_blank" style="color:#007bff;">
+                Certificate of Participation in Economics Expo 16 from Universitas Negeri Jakarta
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"></h4>
+              <a href="https://drive.google.com/file/d/1B23VDzzTVrVhsZgCHGk7lFhasxICUrvd/view" target="_blank" style="color:#007bff;">
+                Certificate of INNECSTUD KIP-K 2021 from Politeknik Negeri Jakarta
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item"></li>
+              <h4 class="h4 timeline-item-title"></h4>
+              <a href="https://drive.google.com/file/d/1CPpik8V0TuqluBs9Rl4EijyGXpzd2s9w/view" target="_blank" style="color:#007bff;">
+                Certificate of Sospol Adventure Camp 2021 from Universitas Negeri Jakarta
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/102fPAL8CQiEiiJcft1_y023vj8tvR_9j/view" target="_blank" style="color:#007bff;">
+                Certificate of Community Service from FORVIT
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"></h4>
+              <a href="https://drive.google.com/file/d/102fPAL8CQiEiiJcft1_y023vj8tvR_9j/view" target="_blank" style="color:#007bff;">
+                Certificate of Community Service in Sukamakmur Village
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"></h4>
+              <a href="https://drive.google.com/file/d/1UvIadAUyfIQ4sD3mwFi4D33fG6V2LL32/view?usp=sharing" target="_blank" style="color:#007bff;">
+                Certificate of Troubleshooting and Simple Assembly & Disassembly by EPSON
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1_wXljpQGE51me5hmAGMDUv7HjxV0TkCA/view?usp=sharing" target="_blank" style="color:#007bff;">
+                Certificate of Mikrotik Hotspot Training at UPT TIK Universitas Negeri Jakarta
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1hMACX21hor0WeB4gJp9Ab1h8e3PmsRwf/view" target="_blank" style="color:#007bff;">
+                Certificate of The Bits and Bytes of Computer Networking by Coursera
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://www.cloudskillsboost.google/public_profiles/cabe01d3-5045-4c3a-8085-4f1b8b217644" target="_blank" style="color:#007bff;">
+                Certificate of Finish all Google Cloud Computing Foundations courses and quests by GCSB
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1Zi1icfcqgrOOCAG_GKOIlgGT4HY9ozSQ/view" target="_blank" style="color:#007bff;">
+                Certificate of Basic Web Programming by Dicoding
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1yZcZMCcP9h4LNeQr7FI4fbmIaWflqDLk/view" target="_blank" style="color:#007bff;">
+                Certificate of Basic JavaScript Programming by Dicoding
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/13W48nRLcKIV_CagSWWqowpNnXIa90O2U/view" target="_blank" style="color:#007bff;">
+                Certificate of Backend Application Development by Dicoding
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1QAg-WWlM80u-nerx308LLGgEParroUY9/view" target="_blank" style="color:#007bff;">
+                Certificate of System Administration and IT Infrastructure Services by Coursera
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://www.cloudskillsboost.google/public_profiles/cabe01d3-5045-4c3a-8085-4f1b8b217644" target="_blank" style="color:#007bff;">
+                Certificate of Finish all courses and quests in Cloud Engineer LP Skillboost by GCSB
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1Z33HoOyuv6B5y03dDgXThk2MhksChtfy/view" target="_blank" style="color:#007bff;">
+                Certificate of Becoming a Google Cloud Engineer by Dicoding
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://www.cloudskillsboost.google/public_profiles/cabe01d3-5045-4c3a-8085-4f1b8b217644" target="_blank" style="color:#007bff;">
+                Certificate of Finish all additional courses and quests in Skillboost by GCSB
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1NtU5c0isl-triB1fvSFZhOo0h1cUcKj_/view" target="_blank" style="color:#007bff;">
+                Certificate of Becoming a Google Cloud Architect by Dicoding
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1JJFmaFPBhMee9u9NSa1QNNovuJTeo7lv/view" target="_blank" style="color:#007bff;">
+                Certificate of Associate Data Engineering by BNSP with E-Serkom LSP
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1r-1XLCafKuchia7B4Isv9mEukuCdKVEt/view" target="_blank" style="color:#007bff;">
+                Certificate of Introduction of Metaverse in Indonesia Thematic Academy Program by Digital Talent Scholarship 2023
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1mcCavRoYIlhh_EdSVALaf2B7jK0Xhiqb/view?usp=sharing" target="_blank" style="color:#007bff;">
+                Certificate of IC2E
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1e_aSzcQc-4GtRofB_VRapppE4NgSUA0D/view" target="_blank" style="color:#007bff;">
+                Certificate of MSIB in PT PLN MCTN (Mandau Cipta Tenaga Nusantara)
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1d7NNOrM3S-Kz9LAqDfYgHvs3hc56ZVSZ/view?usp=drive_link" target="_blank" style="color:#007bff;">
+                Certificate of Career Preparation Program to Become a Digital Talent Best 5.0 with ALTA by Alterra Academy
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1sNs7vWFSLqFOGdvnaqDsx37FLnG91YrR/view?usp=sharing" target="_blank" style="color:#007bff;">
+                Certificate of Junior Web Developer by BNSP with LSP GLOBAL TIK
+              </a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              <a href="https://drive.google.com/file/d/1DvWARRf6ZGFZcCBZfegYlEF3kBs3lF1g/view?usp=sharing" target="_blank" style="color:#007bff;">
+                Certificate of Associate Data Scientist by BNSP with E-Serkom LSP
+              </a>
+              </h4>
+            </li></h4></li></a></h4>
+          </ol>
+        </section>
+      </article>
+
 
       <!--
         - #BLOG
