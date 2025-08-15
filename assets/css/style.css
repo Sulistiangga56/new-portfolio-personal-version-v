@@ -1954,13 +1954,13 @@ textarea.form-input::-webkit-resizer {
    */
 
   .navbar {
-    position: absolute;
+    position: fixed;
     bottom: auto;
     top: 0;
     left: auto;
     right: 0;
     width: max-content;
-    border-radius: 0 20px;
+    border-radius: 0 0 20px 20px;
     padding: 0 20px;
     box-shadow: none;
   }
