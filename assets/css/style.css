@@ -164,6 +164,11 @@ body {
   background: var(--smoky-black);
 }
 
+canvas {
+  display: block;
+  cursor: none;
+}
+
 
 
 
@@ -2217,138 +2222,65 @@ textarea.form-input::-webkit-resizer {
     /* Animasi bergerak ke kanan */
   }
 
-    .btn-download:active {
-      transform: scale(0.95);
-      /* Efek klik */
-    }
+  .btn-download:active {
+    transform: scale(0.95);
+    /* Efek klik */
   }
-  
-  /* Responsive for btn-download on max-width: 768px */
-  @media screen and (max-width: 768px) {
-    .btn-download {
-      padding: 6px 12px;
-      font-size: 0.8rem;
-      border-radius: 8px;
-    }
+}
 
-    .btn-download::after {
-      left: -150%;
-      width: 200%;
-    }
+/* Responsive for btn-download on max-width: 768px */
+@media screen and (max-width: 768px) {
+  .btn-download {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    border-radius: 8px;
   }
 
-  /* Tambahkan untuk perangkat ultra kecil */
-  @media screen and (max-width: 480px) {
-    .btn-download {
-      padding: 4px 8px;
-      font-size: 0.7rem;
-      border-radius: 6px;
-    }
-    /* Download CV */
-    .dropdown-cv {
-      position: relative;
-      display: inline-block;
-    }
+  .btn-download::after {
+    left: -150%;
+    width: 200%;
+  }
+}
 
-    .dropdown-content {
-      position: absolute;
-      background: #fff;
-      min-width: 120px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-      z-index: 10;
-      border-radius: 6px;
-      padding: 8px 0;
-    }
-
-    .cv-download-btn {
-      background: none;
-      border: none;
-      width: 100%;
-      text-align: left;
-      padding: 8px 16px;
-      cursor: pointer;
-      font-size: 15px;
-    }
-
-    .cv-download-btn:hover {
-      background: #f0f0f0;
-    }
-
-    /* Modal CV mobile */
-    .cv-modal {
-      position: fixed;
-      z-index: 9999;
-      left: 0;
-      top: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.4);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .cv-modal-content {
-      background: #fff;
-      padding: 24px 18px;
-      border-radius: 10px;
-      max-width: 320px;
-      width: 90vw;
-      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
-      position: relative;
-    }
-
-    .cv-modal-close {
-      position: absolute;
-      right: 12px;
-      top: 8px;
-      font-size: 22px;
-      cursor: pointer;
-    }
-
-    .cv-modal-btn {
-      background: #007bff;
-      color: #fff;
-      border: none;
-      padding: 8px 18px;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    .cv-modal-btn:hover {
-      background: #0056b3;
-    }
-
-    /* Fix radio button alignment with label/text */
-    .cv-radio-group {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .cv-radio-group label {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 15px;
-      cursor: pointer;
-    }
-    .cv-radio-group input[type="radio"] {
-      margin: 0;
-      vertical-align: middle;
-      accent-color: #007bff;
-    }
+/* Tambahkan untuk perangkat ultra kecil */
+@media screen and (max-width: 480px) {
+  .btn-download {
+    padding: 4px 8px;
+    font-size: 0.7rem;
+    border-radius: 6px;
   }
 
-  /* Responsive for dropdown-content on max-width: 600px */
-  @media (max-width: 600px) {
-    .dropdown-content {
-      display: none !important;
-    }
+  /* Download CV */
+  .dropdown-cv {
+    position: relative;
+    display: inline-block;
   }
 
-  /* Modal CV desktop/web mengikuti versi mobile */
+  .dropdown-content {
+    position: absolute;
+    background: #fff;
+    min-width: 120px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    border-radius: 6px;
+    padding: 8px 0;
+  }
+
+  .cv-download-btn {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .cv-download-btn:hover {
+    background: #f0f0f0;
+  }
+
+  /* Modal CV mobile */
   .cv-modal {
     position: fixed;
     z-index: 9999;
@@ -2364,9 +2296,9 @@ textarea.form-input::-webkit-resizer {
 
   .cv-modal-content {
     background: #fff;
-    padding: 32px 28px;
-    border-radius: 12px;
-    max-width: 400px;
+    padding: 24px 18px;
+    border-radius: 10px;
+    max-width: 320px;
     width: 90vw;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
     position: relative;
@@ -2374,9 +2306,9 @@ textarea.form-input::-webkit-resizer {
 
   .cv-modal-close {
     position: absolute;
-    right: 16px;
-    top: 12px;
-    font-size: 24px;
+    right: 12px;
+    top: 8px;
+    font-size: 22px;
     cursor: pointer;
   }
 
@@ -2384,33 +2316,111 @@ textarea.form-input::-webkit-resizer {
     background: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 22px;
-    border-radius: 8px;
-    font-size: 17px;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 16px;
     cursor: pointer;
     width: 100%;
-    margin-top: 18px;
   }
 
   .cv-modal-btn:hover {
     background: #0056b3;
   }
 
-  /* Fix radio button alignment with label/text for desktop */
+  /* Fix radio button alignment with label/text */
   .cv-radio-group {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
   }
+
   .cv-radio-group label {
     display: flex;
     align-items: center;
-    gap: 7px;
-    font-size: 16px;
+    gap: 6px;
+    font-size: 15px;
     cursor: pointer;
   }
+
   .cv-radio-group input[type="radio"] {
     margin: 0;
     vertical-align: middle;
     accent-color: #007bff;
   }
+}
+
+/* Responsive for dropdown-content on max-width: 600px */
+@media (max-width: 600px) {
+  .dropdown-content {
+    display: none !important;
+  }
+}
+
+/* Modal CV desktop/web mengikuti versi mobile */
+.cv-modal {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cv-modal-content {
+  background: #fff;
+  padding: 32px 28px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90vw;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
+  position: relative;
+}
+
+.cv-modal-close {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cv-modal-btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.cv-modal-btn:hover {
+  background: #0056b3;
+}
+
+/* Fix radio button alignment with label/text for desktop */
+.cv-radio-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cv-radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cv-radio-group input[type="radio"] {
+  margin: 0;
+  vertical-align: middle;
+  accent-color: #007bff;
+}
