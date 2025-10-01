@@ -179,6 +179,7 @@
           <div class="dropdown-cv">
             <button class="navbar-link" id="cvDropdownBtn">Download CV</button>
             <div class="dropdown-content" id="cvDropdownContent" style="display: none;">
+              <button class="cv-download-btn" data-lang="cv">Resume</button>
               <button class="cv-download-btn" data-lang="id">Indonesia</button>
               <button class="cv-download-btn" data-lang="en">English</button>
             </div>
@@ -195,7 +196,11 @@
           <form id="cvForm">
             <div class="cv-radio-group">
               <label>
-                <input type="radio" name="cvLang" value="id" checked>
+                <input type="radio" name="cvLang" value="cv" checked>
+                Resume
+              </label>
+              <label>
+                <input type="radio" name="cvLang" value="id">
                 Indonesia
               </label>
               <label>
@@ -1568,6 +1573,21 @@
           </div>
 
           <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="https://github.com/Sulistiangga56/Caku-Catat-Keuangan-" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/caku.PNG" alt="CAKU" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">BOCAKU (Bot Catat Keuangan)</h3>
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
+
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://github.com/Sistem-Audit-Mutu-Internal-PNJ/SIAMIV2" target="_blank">
                 <figure class="project-img">

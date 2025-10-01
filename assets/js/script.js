@@ -259,7 +259,14 @@ document.addEventListener('DOMContentLoaded', function () {
   cvForm.onsubmit = function (e) {
     e.preventDefault();
     const lang = document.querySelector('input[name="cvLang"]:checked').value;
-    window.open(lang === 'id' ? './assets/document/Angga Sulistiangga_ID.pdf' : './assets/document/Angga Sulistiangga_EN.pdf', '_blank');
+    window.open(
+      lang === 'cv'
+        ? './assets/document/Angga Sulistiangga_CV.pdf'
+        : (lang === 'id'
+            ? './assets/document/Angga Sulistiangga_ID.pdf'
+            : './assets/document/Angga Sulistiangga_EN.pdf'),
+      '_blank'
+    );
     cvModal.style.display = 'none';
   };
 });
