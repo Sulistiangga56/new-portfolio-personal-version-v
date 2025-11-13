@@ -1578,61 +1578,87 @@
           </div>
 
           <ul class="project-list">
+            <style>
+              .project-img img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                border-radius: 8px;
+                display: block;
+              }
+              .project-img {
+                width: 100%;
+                height: 180px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #f5f5f5;
+                border-radius: 8px;
+              }
+              @media (max-width: 600px) {
+                .project-img,
+                .project-img img {
+                  height: 120px;
+                }
+              }
+            </style>
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="https://github.com/Sulistiangga56/trading-bot" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/trabot.jpeg" alt="trading-bot" loading="lazy" />
+                </figure>
+                <h3 class="project-title">Trading Bot</h3>
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
             <li class="project-item active" data-filter-item data-category="applications">
               <a href="https://github.com/Sulistiangga56/wingwer.git" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/wingwer.PNG" alt="WINGWER" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">WINGWER (Bot Check Instagram Otomatis)</h3>
                 <p class="project-category">Applications</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="applications">
               <a href="https://wa.me/6282312056180" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/caku.PNG" alt="CAKU" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">BOCAKU (Bot Catat Keuangan)</h3>
                 <p class="project-category">Applications</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://siami.pnj.ac.id/" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/logo-ppmpp.jpeg" alt="SIAMIV2" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">SIAMI PNJ V2</h3>
                 <p class="project-category">Web development</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="http://172.16.110.54:669/" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/api-adms.PNG" alt="API" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">API ADMS</h3>
                 <p class="project-category">Web development</p>
               </a>
@@ -1643,10 +1669,8 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/adms-api.PNG" alt="ADMS-API-APPS" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">ADMS API APPS</h3>
                 <p class="project-category">Web development</p>
               </a>
@@ -1657,160 +1681,128 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/analytics-tool.JPG" alt="analytics-tool" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">Analytics Tool (konsen Alat Berat)</h3>
                 <p class="project-category">Web development</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://checkig-bylionx.streamlit.app/" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/checkig.JPG" alt="Check IG" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">Instagram Checker(Still Updated)</h3>
                 <p class="project-category">Web development</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="http://54.169.241.244:2131/" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/arista.webp" alt="ADMS Unit" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">ADMS(Arista Development Management System) Unit Arista Group</h3>
                 <p class="project-category">Web development</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://github.com/Sulistiangga56/ProjectAuditInternal" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/aerofood.png" alt="SCM& & CSMS Application" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">Sistem Audit Internal Aerofood ACS Indonesia</h3>
                 <p class="project-category">Web development</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://github.com/Sulistiangga56/projectcq" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/aerofood.png" alt="SCM& & CSMS Application" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">Sistem Berita Acara dan Rekap Berita Acara Aerofood ACS Indonesia</h3>
                 <p class="project-category">Web development</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://github.com/Sulistiangga56/projectcq" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/aerofood.png" alt="SCM& & CSMS Application" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">Aplikasi CCP Aerofood ACS Indonesia</h3>
                 <p class="project-category">Applications</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://sipadu.poltekkesjakarta3.ac.id/" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/sipadu.JPG" alt="SCM& & CSMS Application" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">SIPADU POLTEKKES Jakarta 3</h3>
                 <p class="project-category">Web development</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://siami-jurusan.pnj.ac.id/" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/siamiprodi.JPG" alt="SCM& & CSMS Application" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">Sistem Audit Internal Prodi dan Pascasarjana Politeknik Negeri Jakarta</h3>
                 <p class="project-category">Web development</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="http://8.215.59.149:8000/" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/siamipusat.JPG" alt="SCM& & CSMS Application" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">Sistem Audit Internal Pusat Politeknik Negeri Jakarta</h3>
                 <p class="project-category">Web development</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="http://8.215.59.149:8002/" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/siamiunit.JPG" alt="SCM& & CSMS Application" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">Sistem Audit Internal Unit Politeknik Negeri Jakarta</h3>
                 <p class="project-category">Web development</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://github.com/Magang-MCTN" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/project-0.jpg" alt="SCM& & CSMS Application" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">SCM && CSMS Application</h3>
                 <p class="project-category">Web development</p>
                 <br>
@@ -1819,17 +1811,14 @@
                       target="_blank">Video Demo</a></b></center>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="applications">
               <a href="https://github.com/travel-yours" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/project-2.png" alt="TravelYours" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">Travel Yours - Virtual and Smart Tour Guide Application</h3>
                 <p class="project-category">Applications</p>
                 <br>
@@ -1837,131 +1826,99 @@
                       Demo</a></b></center>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://www.ali.web.id/web2/" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/asosiasi.jpg" alt="SCM& & CSMS Application" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">Asosiasi Logistik Indonesia</h3>
                 <p class="project-category">Web development</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web design">
               <a href="https://github.com/Sulistiangga56/PenjadwalanPerkuliahan" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/project-3.jpg" alt="Penjadwalan Perkuliahan" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">Penjadwalan Perkuliahan </h3>
-
                 <p class="project-category">Web design</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="applications">
               <a href="https://github.com/Sulistiangga56/resto_kotlin" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/project-4.png" alt="Resto App with Kotlin" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">Resto App with Kotlin</h3>
-
                 <p class="project-category">Applications</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="applications">
               <a href="https://github.com/Sulistiangga56/Bus_Firebase" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-4.png" alt="Bus_Firebase" loading="lazy" width="20px" />
+                  <img src="./assets/images/project-4.png" alt="Bus_Firebase" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">Bus Firebase</h3>
-
                 <p class="project-category">Applications</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://github.com/Sulistiangga56/SQLinjection" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/project-6.png" alt="SQLinjection" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">SQLinjection</h3>
-
                 <p class="project-category">Web development</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://github.com/Sulistiangga56/SIRUSAKDEH" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-7.png" alt="SIRUSAKDEH (Sistem Aplikasi Rumah Sakit Rawat Jalan)"
-                    loading="lazy" />
+                  <img src="./assets/images/project-7.png" alt="SIRUSAKDEH (Sistem Aplikasi Rumah Sakit Rawat Jalan)" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">SIRUSAKDEH (Sistem Aplikasi Rumah Sakit Rawat Jalan)</h3>
-
                 <p class="project-category">Web development</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://github.com/Sulistiangga56/InventoryGudang" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/project-8.jpg" alt="InventoryGudang" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">Inventory Gudang</h3>
-
                 <p class="project-category">Web development</p>
               </a>
             </li>
-
             <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://github.com/Sulistiangga56/e-pilbem" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/project-9.png" alt="e-pilbem" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">E-Pilbem</h3>
-
                 <p class="project-category">Web development</p>
               </a>
             </li>
@@ -1972,12 +1929,9 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/project-10.jpg" alt="etc" loading="lazy" />
                 </figure>
-
                 <h3 class="project-title">For other projects that I have uploaded, you can visit my github.</h3>
-
                 <p class="project-category">Web development, Web Design, Applications</p>
               </a>
             </li>
